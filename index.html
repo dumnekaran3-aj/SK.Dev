@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Dumane | Backend Developer</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: white;
+            overflow-x: hidden;
+            background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1b2735);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #00ffcc;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav ul li:hover {
+            color: #00ffcc;
+        }
+
+        section {
+            padding: 100px 10%;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #00ffcc;
+        }
+
+        .hero p {
+            max-width: 800px;
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 14px 35px;
+            border-radius: 30px;
+            border: none;
+            background: #00ffcc;
+            color: black;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            background: #00cc99;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border: 1px solid #00ffcc;
+        }
+
+        .dev-role {
+            color: #2cb67d;
+            margin-bottom: 10px;
+        }
+
+        .social-media img {
+            margin-top: 15px;
+            margin-right: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: none;
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>SK.Dev</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#developer">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Hello, I'm <span>Karan Dumane</span></h1>
+        <p>
+            I am a professional backend developer focused on building secure, scalable and high-performance server-side applications.
+        </p>
+        <p>
+            My development approach includes API planning, database architecture, authentication systems, business logic implementation and performance optimization.
+        </p>
+        <button class="btn"><a href="#about">Explore My Backend Work</a></button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                I build robust backend systems using modern server-side technologies. My focus is on secure authentication, efficient database structure and optimized API response handling.
+            </p>
+            <br>
+            <p>
+                I follow a professional backend workflow including requirement analysis, API design, database schema planning, server implementation, testing and deployment.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h3>Bike Rental Backend System</h3>
+                <p>
+                    REST API with login/signup authentication, booking logic, automated bill calculation, admin panel integration and structured database system.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Food Ordering Backend</h3>
+                <p>
+                    Complete backend with order processing APIs, cart management logic, payment handling and real-time order tracking system.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Authentication & Security Module</h3>
+                <p>
+                    Secure JWT authentication system with encrypted passwords, role-based access control and protected API routes.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="developer">
+        <h2>Development Team</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h3>Karan Dumane</h3>
+                <div class="dev-role">Backend Developer & System Architect</div>
+                <p>
+                    Responsible for server-side logic, API development, authentication systems, database management and backend testing.
+                </p>
+                <div class="social-media">
+                    <img src="c:\Users\Asus\Downloads\linkedin.png" alt="linkedin" width="24">
+                    <img src="c:\Users\Asus\Downloads\github.png" alt="github" width="24">
+                    <img src="c:\Users\Asus\Downloads\instagram.png" alt="instagram" width="24">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Sunilkumar Shinde</h3>
+                <div class="dev-role">Frontend Developer & UI Specialist</div>
+                <p>
+                    Handles UI design, responsive layouts, animation effects and frontend architecture integration with backend APIs.
+                </p>
+                <div class="social-media">
+                    <img src="c:\Users\Asus\Downloads\linkedin.png" alt="linkedin" width="24">
+                    <img src="c:\Users\Asus\Downloads\github.png" alt="github" width="24">
+                    <img src="c:\Users\Asus\Downloads\instagram.png" alt="instagram" width="24">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card contact">
+            <form action="mailto:karandumane@example.com" method="POST" enctype="text/plain">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="5" placeholder="Project Details" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Karan Dumane | Backend Developer | Open for Freelance Projects
+    </footer>
+
+</body>
+
+</html>
